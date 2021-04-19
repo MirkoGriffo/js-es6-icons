@@ -1,0 +1,99 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Utilities */
+
+.p-20 {
+  padding: 20px;
+}
+
+/* Layout */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fef6e4;
+}
+
+/* Header */
+
+header {
+  color: #001858;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header h1 span {
+  color: pink;
+}
+
+/* Search */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001858;
+  color: #fef6e4;
+}
+
+.wrap-select {
+  position: relative;
+}
+
+.wrap-select select {
+  margin-left: 10px;
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid #fef6e4;
+  color: #fef6e4;
+  appearance: none;
+}
+
+.wrap-select::before {
+  content: " ";
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  border: 5px solid transparent;
+  border-top: 5px solid #fef6e4;
+}
+
+/* Icons */
+
+.icons {
+  background: pink;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-grow: 1;
+}
+
+.icons .icon {
+  flex-basis: calc(100% / 6 - 20px);
+  background: #fef6e4;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.icons .icon i {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
